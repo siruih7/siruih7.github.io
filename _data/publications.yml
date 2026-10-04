@@ -11,7 +11,7 @@ main:
     code: ""
     page: ""
     bibtex: ""
-    notes: ""
+    notes: "Oral Presentation"
 
   - title: "An Ordinal Optimization-Based Method for the Collaborative Optimization of Train Scheduling and Passenger Flow Guidance in Urban Rail Transit"
     authors: "<strong>Sirui Huang</strong>, Wei Dong, Xiaobo Wu, Dushuo Han, Xinya Sun, and Yindong Ji"
@@ -23,4 +23,4 @@ main:
     code: ""
     page: ""
     bibtex: ""
-    notes: ""
+    notes: "Oral Presentation"
