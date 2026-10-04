@@ -1,5 +1,15 @@
 Edited by Sirui Huang
 
+# Sirui Huang's Academic Homepage
+
+- **Name:** Sirui Huang
+- **Email:** [huang-sr24@mails.tsinghua.edu.cn](mailto:huang-sr24@mails.tsinghua.edu.cn)
+- **September 2024 – Present:** Master's studies in Control Science and Engineering, Department of Automation, Tsinghua University.
+- **September 2020 – June 2024:** Bachelor's degree in Automation Science, School of Control Science and Engineering, Shandong University.
+- **Website:** https://siruih7.github.io/
+
+The Jekyll homepage is configured in `_config.yml` and `index.md`; `html_source_file/index.html` is the standalone HTML version. The basic CV is available at `assets/files/curriculum_vitae.pdf`, with editable LaTeX source in `assets/files/curriculum_vitae.tex`. Personal research interests, experience, publications, awards, skills, academic service, additional profile links, and portrait still need to be supplied. The documentation below describes the original theme.
+
 # The Minimal Light Theme
 
 [![LICENSE](https://img.shields.io/github/license/yaoyao-liu/minimal-light?style=flat-square&logo=creative-commons&color=EF9421)](https://github.com/yaoyao-liu/minimal-light/blob/main/LICENSE)
@@ -112,28 +122,30 @@ The Minimal Light theme will respect the following variables, if set in your sit
 
   ```yaml
 # Basic Information 
-title: Your Name
-position: Ph.D. Student
-affiliation: Your Affiliation
-email: yourname (at) example.edu
+title: Sirui Huang
+position: Master's Student
+affiliation: Department of Automation, Tsinghua University
+email: huang-sr24@mails.tsinghua.edu.cn
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://minimal-light-theme.yliu.me/
+keywords: Sirui Huang, Tsinghua University, Shandong University, Control Science and Engineering, Automation
+description: Sirui Huang is a master's student in Control Science and Engineering at the Department of Automation, Tsinghua University.
+canonical: https://siruih7.github.io/
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/
+# Add verified personal profile URLs when available.
+google_scholar:
 cv_link: assets/files/curriculum_vitae.pdf
-github_link: https://github.com/
-linkedin: https://www.linkedin.com/
-twitter: https://twitter.com/
+github_link: https://github.com/siruih7
+linkedin:
+twitter:
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.png
+# Add a personal portrait when available; the bundled image is a template asset.
+avatar:
 favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
 
@@ -151,7 +163,7 @@ font: "Serif" # or "Sans Serif"
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
-google_analytics: UA-111540567-4
+google_analytics:
   ```
 ### Edit `index.md`
 
