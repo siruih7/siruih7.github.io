@@ -1,2 +1,26 @@
-# Add Sirui Huang's verified publications here (title, authors, venue, year, and links).
-main: []
+# Bibliographic information supplied by Sirui Huang.
+# Empty fields can be filled in later; do not use a DOI landing page as a PDF URL.
+main:
+  - title: "A Large-Small Model Coordination Framework Based on Tactical Case-Based Reasoning Reward Machine for Adversarial Game Scenarios"
+    authors: "Wei Dong, <strong>Sirui Huang</strong>, Chong Wang, Guohua Zhang, and Yindong Ji"
+    conference_short: ICCBR
+    conference: '2026 34th International Conference on Case-Based Reasoning <strong>(ICCBR)</strong>, Bremen, Germany, 2026, pp. 455–471.'
+    doi: https://doi.org/10.1007/978-3-032-33865-5_28
+    image: ""
+    pdf: ""
+    code: ""
+    page: ""
+    bibtex: ""
+    notes: ""
+
+  - title: "An Ordinal Optimization-Based Method for the Collaborative Optimization of Train Scheduling and Passenger Flow Guidance in Urban Rail Transit"
+    authors: "<strong>Sirui Huang</strong>, Wei Dong, Xiaobo Wu, Dushuo Han, Xinya Sun, and Yindong Ji"
+    conference_short: CMSDA
+    conference: 'Proceedings of the 2024 4th International Conference on Computational Modeling, Simulation and Data Analysis <strong>(CMSDA 24)</strong>, Hangzhou, China, 2025, pp. 581–587.'
+    doi: https://doi.org/10.1145/3727993.3728088
+    image: ""
+    pdf: ""
+    code: ""
+    page: ""
+    bibtex: ""
+    notes: ""
