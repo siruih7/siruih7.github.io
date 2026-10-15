@@ -57,3 +57,11 @@ exclude:
   - LICENSE
   - minimal-light.gemspec
   - html_source_file/
+
+  # Local reference materials must never be copied into the published site.
+  - "jdluuu.github.io-main(Do not make any modifications)/"
+  - CV_JiadongLu.pdf
+  - PhdResume_Lu.rar
+  - assets/files/cv_lujiadong.json
+  - assets/files/reference_portrait-000.jpg
+  - .build/

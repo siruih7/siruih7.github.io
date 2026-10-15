@@ -24,7 +24,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 @media print, screen and (min-width: 480px) {.col-sm-9 {width: 100%;}}
 
-.publications { margin-top: 2rem; }
+.publications { margin-top: 1.2rem; }
 
 .publications h1 { color: var(--global-theme-color); font-size: 2rem; text-align: center; margin-top: 1em; margin-bottom: 1em; }
 
@@ -36,9 +36,16 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography { list-style: none; padding: 0; margin-top: 0; }
 
-.publications ol.bibliography li { min-height: 110px; margin-bottom: 0.5rem; }
+.publications ol.bibliography li { min-height: 110px; margin-bottom: 0.7rem; }
 
 .publications ol.bibliography li .abbr { height: 8rem; margin-bottom: 0.5rem; }
+
+.publications ol.bibliography li .pub-row-no-image .abbr {
+    min-width: 100px;
+    min-height: 2rem;
+    height: auto;
+    box-sizing: border-box;
+}
 
 .publications ol.bibliography li .abbr abbr { display: inline-block; background-color: var(--global-theme-color); padding-left: 1rem; padding-right: 1rem; position: absolute; top: 8px; left: 16px; }
 
@@ -73,3 +80,17 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 .publications ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
 
 .publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: 123px; width: 270px; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: cover; }
+
+.publications ol.bibliography li .teaser.teaser-contain {
+    object-fit: contain;
+    background-color: #fff;
+    box-sizing: border-box;
+    /* Keep the conference badge clear of the figure. */
+    padding: 24px 4px 4px;
+}
+
+.publications ol.bibliography li .teaser.teaser-crop {
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}

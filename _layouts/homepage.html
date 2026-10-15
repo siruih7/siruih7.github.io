@@ -26,12 +26,13 @@
     {% else %}
     <link rel="stylesheet" href="./assets/css/font.css">
     {% endif %}
+    {% assign css_version = site.time | date: '%s' %}
     {% if site.auto_dark_mode %}
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/publications.css">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ css_version }}">
+    <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}?v={{ css_version }}">
     {% else %}
-    <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
-    <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
+    <link rel="stylesheet" href="{{ '/assets/css/style-no-dark-mode.css' | relative_url }}?v={{ css_version }}">
+    <link rel="stylesheet" href="{{ '/assets/css/publications-no-dark-mode.css' | relative_url }}?v={{ css_version }}">
     {% endif %}
 
   </head>
@@ -108,6 +109,8 @@
         
       </footer>
     </div>
+    {% include project-modal.html %}
+    <script src="{{ "/assets/js/project-modal.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>
