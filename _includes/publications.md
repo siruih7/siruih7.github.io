@@ -81,6 +81,9 @@
         {% endfor %}
         {% else %}
         <div class="modal-description">
+          {% if link.description and link.description != "" %}
+          <p>{{ link.description | escape }}</p>
+          {% endif %}
           <p>{{ link.authors }}</p>
           <p><em>{{ link.conference }}</em></p>
           {% if link.notes and link.notes != "" %}

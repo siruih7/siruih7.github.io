@@ -8,12 +8,15 @@ I am Sirui Huang, a master's student in Control Science and Engineering at the D
 
 Contact: [huang-sr24@mails.tsinghua.edu.cn](mailto:huang-sr24@mails.tsinghua.edu.cn).
 
+## RESEARCH FOCUS
+
+My research focuses on improving urban railway schedules to make public transit more reliable and efficient, supporting smoother commutes and sustainable cities.
+
 ## Education
 
 - **Tsinghua University** — Master's studies in Control Science and Engineering, Department of Automation. **September 2024 – Present**.
 - **Shandong University** — Bachelor's degree in Automation Science, School of Control Science and Engineering. **September 2020 – June 2024**.
 
-<!-- Research Interests: awaiting Sirui Huang's research topics. -->
 <!-- News: awaiting verified milestones, awards, or announcements. -->
 
 {% if site.data.publications.main.size > 0 %}

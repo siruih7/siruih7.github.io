@@ -19,6 +19,9 @@ main:
     conference: 'Proceedings of the 2024 4th International Conference on Computational Modeling, Simulation and Data Analysis <strong>(CMSDA 24)</strong>, Hangzhou, China, 2025, pp. 581–587.'
     doi: https://doi.org/10.1145/3727993.3728088
     image: assets/img/CMSDA_main.png
+    description: >-
+      This work jointly optimizes train timetables and passenger flow guidance to make urban rail transit greener and more passenger-friendly.
+      Verified on Chongqing Metro Lines 1, 2, and 3, the method reduces traction energy consumption by 0.68 % and cuts average passenger waiting time by 7.79 %—meaning commuters spend noticeably less time standing on platforms while the transit system runs more efficiently.
     pdf: ""
     code: ""
     page: ""
