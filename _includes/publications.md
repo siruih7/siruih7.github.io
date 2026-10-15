@@ -5,10 +5,15 @@
 
 {% for link in site.data.publications.main %}
 
+{% assign has_image = false %}
+{% if link.image and link.image != "" %}
+{% assign has_image = true %}
+{% endif %}
+
 <li>
-<div class="pub-row{% if link.image == nil or link.image == '' %} pub-row-no-image{% endif %}">
+<div class="pub-row{% unless has_image %} pub-row-no-image{% endunless %}">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    {% if link.image and link.image != "" %}
+    {% if has_image %}
     {% capture teaser %}
     {% if link.image_viewbox %}
     {% assign crop = link.image_viewbox | split: ' ' %}
@@ -24,11 +29,7 @@
     <img src="{{ link.image }}" alt="{{ link.title | strip_html | escape }}" loading="lazy" style="max-width: 100%;" class="teaser{% if link.image_fit == 'contain' or link.image_fit == nil or link.image_fit == '' %} teaser-contain{% endif %} img-fluid z-depth-1">
     {% endif %}
     {% endcapture %}
-    {% if link.details %}
-    <a href="#" class="project-modal-trigger" data-project-id="pub-{{ forloop.index }}">{{ teaser }}</a>
-    {% else %}
-    <a href="{{ link.image }}" target="_blank" rel="noopener">{{ teaser }}</a>
-    {% endif %}
+    <a href="#" class="project-modal-trigger" data-project-id="pub-{{ forloop.index }}" aria-haspopup="dialog" aria-controls="project-modal">{{ teaser }}</a>
     {% endif %}
     {% if link.conference_short %}
     <abbr class="badge">{{ link.conference_short }}</abbr>
@@ -42,9 +43,10 @@
         <a href="{{ link.pdf | default: link.doi }}">{{ link.title }}</a>
         {% endif %}
       </div>
-      {% if link.details %}
+      {% if link.details or has_image %}
       <template id="pub-{{ forloop.index }}-content">
         <h2 class="modal-title">{{ link.title }}</h2>
+        {% if link.details %}
         {% if link.details.images_first %}
         {% for img in link.details.images %}
         <figure class="modal-figure">
@@ -77,6 +79,24 @@
           {% if vid.caption %}<figcaption>{{ vid.caption }}</figcaption>{% endif %}
         </figure>
         {% endfor %}
+        {% else %}
+        <div class="modal-description">
+          <p>{{ link.authors }}</p>
+          <p><em>{{ link.conference }}</em></p>
+          {% if link.notes and link.notes != "" %}
+          <p><strong>{{ link.notes }}</strong></p>
+          {% endif %}
+          {% if link.doi and link.doi != "" %}
+          <p><a href="{{ link.doi }}" target="_blank" rel="noopener">DOI</a></p>
+          {% endif %}
+          {% if link.pdf and link.pdf != "" %}
+          <p><a href="{{ link.pdf }}" target="_blank" rel="noopener">PDF</a></p>
+          {% endif %}
+        </div>
+        <figure class="modal-figure">
+          <img src="{{ link.image }}" alt="{{ link.title | strip_html | escape }}">
+        </figure>
+        {% endif %}
       </template>
       {% endif %}
       <div class="author">{{ link.authors }}</div>
