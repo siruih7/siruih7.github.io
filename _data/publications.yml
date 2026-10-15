@@ -18,7 +18,7 @@ main:
     conference_short: CMSDA
     conference: 'Proceedings of the 2024 4th International Conference on Computational Modeling, Simulation and Data Analysis <strong>(CMSDA 24)</strong>, Hangzhou, China, 2025, pp. 581–587.'
     doi: https://doi.org/10.1145/3727993.3728088
-    image: ""
+    image: assets/img/CMSDA_main.png
     pdf: ""
     code: ""
     page: ""

@@ -8,8 +8,10 @@
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    {% if link.image %} 
-    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
+    {% if link.image and link.image != "" %}
+    <a href="{{ link.image }}" target="_blank" rel="noopener">
+      <img src="{{ link.image }}" alt="{{ link.title | escape }}" class="teaser img-fluid z-depth-1" loading="lazy" style="max-width: 100%; object-fit: contain;">
+    </a>
     {% endif %}
     {% if link.conference_short %} 
     <abbr class="badge">{{ link.conference_short }}</abbr>
